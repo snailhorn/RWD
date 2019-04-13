@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 設定CSS樣式 -->
+    <style>
+        #mazuko{
+            /* 粗細 樣式 顏色 */
+            border:10px solid red;
+            border-radius:50%;
+        }
+        #pooh{
+            border-top: 10px solid blue;
+            border-right:5px dashed red;
+            border-bottom:7px dotted green;
+            border-left:3px inset purple;
+            /* 數字愈大圓角愈明顯，例：50%時會變正圓或楕圓*/
+            border-radius:50%;
+            /* box-shadow 水平、垂直、模糊、陰影尺寸、顏色 */
+            box-shadow: 0px 0px 10px 10px red;
+        }
+        #elep{
+        /* 四邊同風格不同寬度框線可縮寫 順序為上右下左*/
+            border:solid;
+            border-width:10px 20px 40px 8px;
+            border-color:#369  #585 #060 #030;            
+            /* 圖片透明度 */
+            opacity:0.5;
+             filter:blur(1px)
+        }
+        #elep2{
+            /* drop-shadow根據png的輪廓產生陰影 
+            drop-shadow 水平、垂直、模糊、陰影尺寸、顏色 */
+            filter:drop-shadow(0px 0px 10px red);
+        }
+        #elep3{
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="2.png" width="300px" id="mazuko">
+    <br><br><br><br><br>
+    <img src="1.jpg" width="300px" id="pooh">
+    <br><br><br><br><br>
+    <img src="3.png" width="300px" id="elep">
+    <br><br><br><br><br>
+    <img src="4.png" width="300px" id="elep2">
+    <br><br><br><br><br>
+    <img src="5.png" width="300px" id="elep3">
+</body>
+</html>

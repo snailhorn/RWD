@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 外連字體 -->
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <!-- 設定css樣式 -->
+    <style>
+        /* 文字大小 font-size 斜體 font-style:italic 粗體 font-weight:blod*/
+        /* 字體 font-family */
+        h2{
+            color:gold;
+        }
+        .brown{
+            color:brown
+        }
+        .big{
+            font-size: 50px
+        }
+        .italic{
+            font-style: italic
+        }
+        .bold{
+            font-weight: bold
+        }
+        *{
+            font-family: 'dokdo', 'Times New Roman', serif,'標楷體','微軟正黑體'
+        }
+        .center{
+            text-align:center
+        }
+        /* 可一次定義多個class，並套用至相符的class */
+        .blue.center{
+            text-decoration:overline
+        }
+        .shadow{
+            text-shadow:2px 2px 5px red
+        }
+        h2:hover{
+            text-shadow:0px 0px 10px red
+        }
+        /* 未連結 */
+        a:link{
+            color: #000000;
+        }
+        /* 已連結過 */
+        a:visited{
+            color: #FF0000;
+        }
+        /* 滑鼠移至連結 */
+        a:hover{
+            color: #00FF00;
+        }
+        /* 選擇的連結 */
+        a:active{
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顏色格式 名稱 /#rgb/#rrggbb/rgb(0-255,0-255,0-255,0.0~1.0) -->
+    <h1 style="color:dodgerblue">早安</h1>
+    <h2 style="color:forestgreen">同一行如果有設定顏色也有設css樣式，會以行內設定為主</h2> 
+    <h2 class="brown">在css可以用class定義顏色、大小...，class開頭是.(點)</h2>
+    <p class="big italic">快捷鍵：h2.big.italic</p>
+    <p class="bold">粗體</p>
+    <p>這個網頁可以使用font的外連檔，超方便 https://fonts.google.com/</p>
+    <p class="center">text-align 文字置中center 靠左left 靠右right</p>
+    <p class="blue center italic">可一次定義多個class，並套用至相符的class</p>
+    <p class="shadow">陰影：text-shadow:水平距離px 垂直距離px 模糊距離px 顏色</p>
+    <p style="text-shadow:0px 0px 10px red">水平跟垂直距離設0會有發光效果</p>
+    <h2 style="color: sienna">css設定hover後滑鼠移過來會有效果唷</h2>
+    <a href="www.google.com" style="font-size:30px">估狗</a>
+ </body>
+</html>
